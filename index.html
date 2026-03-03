@@ -237,69 +237,38 @@
     }
 
     /* ABOUT / INTRO */
-    .about {
-      background: var(--cream);
-    }
-
-    .about-inner {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 5rem;
-      align-items: center;
-    }
-
-    .about-img {
-      border-radius: 4px;
-      overflow: hidden;
-      position: relative;
-    }
-
-    .about-img img {
-      width: 100%;
-      height: 420px;
-      object-fit: cover;
-      display: block;
-    }
-
-    .about-img::after {
-      content: '';
-      position: absolute;
-      bottom: -18px;
-      right: -18px;
-      width: 80%;
-      height: 80%;
-      border: 3px solid var(--accent);
-      border-radius: 4px;
-      z-index: -1;
-    }
-
-    .about-text p {
-      color: var(--light-text);
-      line-height: 1.8;
-      margin-bottom: 1rem;
-      font-size: 0.97rem;
-    }
-
-    .about-stats {
-      display: flex;
-      gap: 2.5rem;
-      margin-top: 2rem;
-      padding-top: 2rem;
-      border-top: 1px solid rgba(26,43,60,0.1);
-    }
-
-    .stat-num {
-      font-family: 'Playfair Display', serif;
-      font-size: 2.2rem;
-      color: var(--navy);
-      line-height: 1;
-    }
-
-    .stat-label {
-      font-size: 0.8rem;
-      color: var(--light-text);
-      margin-top: 0.3rem;
-    }
+  <!-- ABOUT -->
+<section class="about" id="about">
+  <div class="container">
+    <div class="about-inner">
+      <div class="about-img">
+        <!-- Replace this src with a real McCormick Pier photo -->
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Portland_Oregon_Morning_Reflections.jpg/1280px-Portland_Oregon_Morning_Reflections.jpg" alt="Portland Waterfront" />
+      </div>
+      <div class="about-text">
+        <p class="section-label">Who We Are</p>
+        <h2 class="section-title">Local Experts in Waterfront Property Management</h2>
+        <p>Hansen-Coe Property Management LLC is a boutique, owner-operated property management company serving the McCormick Pier community in Portland, Oregon.</p>
+        <p>As a resident of McCormick Pier myself, I bring something most property managers can't offer — firsthand, day-to-day knowledge of the community, its amenities, its rhythms, and what makes it a truly special place to live. I'm not managing your property from across town. I'm your neighbor.</p>
+        <p>I specialize in long-term rentals, connecting residents with one of Portland's most distinctive waterfront addresses on the Willamette River. I am licensed through the Oregon Real Estate Agency and operate with dedicated client trust accounts in full compliance with Oregon law.</p>
+        <div class="about-stats">
+          <div>
+            <div class="stat-num">Local</div>
+            <div class="stat-label">Portland-Based</div>
+          </div>
+          <div>
+            <div class="stat-num">24h</div>
+            <div class="stat-label">Avg. Response Time</div>
+          </div>
+          <div>
+            <div class="stat-num">OREA</div>
+            <div class="stat-label">Licensed & Compliant</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
     /* SERVICES */
     .services { background: var(--white); }
